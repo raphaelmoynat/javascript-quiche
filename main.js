@@ -87,9 +87,20 @@ monBouton.addEventListener("click", ()=>{
     //trouve le moyen    de vérifier si l'utilisateur n'a pas utilisé le mot quiche
     // si c'est le cas, on n'accepter pas sa phrase, et on la remplace par
     // désolé "quiche" n'est pas un mot autorisé
-
-    maBoiteAChoucroute.innerHTML += ("<p>"+monChampTexte.value+"</p>")
+    let laPhrase = monChampTexte.value
+    let lesMots = laPhrase.split(" ")
+    let containsTarget = lesMots.includes("quiche")
+    if (containsTarget == true){
+        maBoiteAChoucroute.innerHTML += ("<p>"+"déso c'est non"+"</p>")
+    }
+    else{
+        maBoiteAChoucroute.innerHTML += ("<p>"+laPhrase+"</p>")
+    }
     monChampTexte.value = ""
+
+
+
+
 } )
 
 let unPeu = "pas beaucoup"
@@ -98,6 +109,8 @@ let beaucoup = "pas peu"
 beaucoup += unPeu
 
 console.log(beaucoup)
+
+
 
 
 
