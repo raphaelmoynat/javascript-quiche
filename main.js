@@ -80,8 +80,11 @@ const  monChampTexte =document.querySelector(".message")
 const monBouton = document.querySelector(".monBouton")
 
 
+
+
+
 monBouton.addEventListener("click", ()=>{
-    //trouve le moyen de vérifier si l'utilisateur n'a pas utilisé le mot quiche
+    //trouve le moyen    de vérifier si l'utilisateur n'a pas utilisé le mot quiche
     // si c'est le cas, on n'accepter pas sa phrase, et on la remplace par
     // désolé "quiche" n'est pas un mot autorisé
 
